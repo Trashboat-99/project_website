@@ -1,2 +1,2 @@
-# project_website
-This is a website I'm building for a project
+# Provality Website
+This is a website I'm building for a class project. 
