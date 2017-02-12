@@ -16,24 +16,34 @@ body, html{
 #nav-logo{
 	background-color: #FFFFFF
 }
-section #home{
-	background-image:url("assets/purple_vetcor.jpg");
-}
 #home{
+	background-image:url("../assets/purple_vetcor.jpg");
 	text-align: center;
-	margin-top:100px;
 	height:100%;
 	width:100%;
-	
+}
+.container #home-jumbo{
+	margin-top: 200px;
+	background-color: #22153F;
+	color:#FFFFFF;
 }
 #contact{
+	margin-top:25%;
 	text-align:center;
-	height:650px;
+	height:500px;
 	width:100%;
+}
+#contact-btn{
+	border-color:#7F236F;
+	background-color:#7F236F;
+	font-size: 24px;
+	margin-top:75px;
 }
 footer{
 	background-color: #262626;
 	color:#FFFFFF;
 	height:150px;
 }
-
+#list-items{
+	margin-right: 50%;
+}
