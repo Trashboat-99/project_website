@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--meta tag for auto-refreshing the page every 5 seconds for updates-->
-  <meta http-equiv="Refresh" content="5"/>
   <!--Link to style sheet-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -47,8 +46,9 @@
 
 <section id="home">
 <div class="row">
-<div class="col-lg-4"></div>
-    <div class="col-lg-4">
+<div class="col-lg-12">
+  <div class="container">
+    <div id="home-jumbo" class="jumbotron">
           <h1>Provality</h1>
           <h3>By Stephanie Honore`</h3>
           <ul class="list-inline intro-social-buttons">
@@ -56,8 +56,9 @@
             <li><a href="https://github.com/shonore" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a></li>
             <li><a href="https://www.linkedin.com/in/stephanie-honoré-19b75188" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a></li>
           </ul>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4"></div>
   </div>
 </section>
 <!--about section-->
@@ -69,7 +70,8 @@
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
         <h2 class="section-heading">Design</h2>
-        <p class="lead">Blah blah blah blah blah<br>blah blah blah...</p>
+        <p class="lead">Crafting images, layouts, and, patterns of the fly.Whether is is creating a logo to creating an
+        entire website's mockup, I can handle your company's branding needs.</p>
       </div>
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
         <img class="img-responsive" src="assets/design.svg">
@@ -84,7 +86,8 @@
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
         <h2 class="section-heading">Develop</h2>
-        <p class="lead">Enter text here. <br>Enter more text here as well.</p>
+        <p class="lead">Coding using whatever language suites your fancy. Websites, iOS and Android applications. Experience developing
+        with Salesforce as well</p>
       </div>
       <div class="col-lg-5 col-sm-pull-6 col-sm-6">
         <img class="img-responsive" src="assets/rocket.svg">
@@ -112,10 +115,10 @@ putting in the time and energy to research the right, not the most convienient, 
 <section id="contact">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-        <h1>To Contact Me</h1>
+      <div class="col-lg-12">
+        <h1>Want to Connect?</h1>
+        <button id="contact-btn"class="btn btn-primary">Let's Get In Touch</button>
         </div>
-        <div class="col-lg-6"></div>
     </div>
   </div>
 </section>
@@ -124,7 +127,7 @@ putting in the time and energy to research the right, not the most convienient, 
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <ul class="list-inline">
+        <ul id="list-items"class="list-inline">
           <li><a href="#">Home</a></li>
           <li class="footer-menu-divider">&sdot;</li>
           <li><a href="#about">About</a></li>
