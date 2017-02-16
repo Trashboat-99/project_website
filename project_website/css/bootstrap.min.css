@@ -22,16 +22,33 @@ body, html{
 	height:100%;
 	width:100%;
 }
+@keyframes example{
+	from{background-color: #FFFFFF};
+	to{background-color: #22153F};
+}
 .container #home-jumbo{
 	margin-top: 200px;
 	background-color: #22153F;
 	color:#FFFFFF;
+	animation-name: example;
+	animation-duration: 5s;
+}
+#design-img{
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+ transition: transform .8s ease-in-out;
+}
+#design-img:hover{
+	-webkit-transform: rotate(360deg); /*for chrome, safari, and, opera*/
+	transform: rotate(360deg);
 }
 #contact{
 	margin-top:25%;
 	text-align:center;
 	height:500px;
 	width:100%;
+}
+#contact-btn a{
+	color:#FFFFFF;
 }
 #contact-btn{
 	border-color:#7F236F;
@@ -46,4 +63,12 @@ footer{
 }
 #list-items{
 	margin-right: 50%;
+}
+#portfolio{
+	height:100%;
+	width: 100%;
+}
+#coming-soon{
+	margin-top: 30%;
+	margin-left: 30%;
 }
