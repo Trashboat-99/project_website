@@ -16,24 +16,26 @@ body, html{
 #nav-logo{
 	background-color: #FFFFFF
 }
-section #home{
-	background-image:url("assets/purple_vetcor.jpg");
-}
 #home{
 	text-align: center;
-	margin-top:100px;
 	height:100%;
 	width:100%;
-	
+
 }
 #contact{
 	text-align:center;
-	height:650px;
+	margin-top:25%;
+	height:500px;
 	width:100%;
+}
+#contact button{
+	margin: 50px;
+	border-color:#262626;
+	color:#FFFFFF;
+	background-color: #262626;
 }
 footer{
 	background-color: #262626;
 	color:#FFFFFF;
 	height:150px;
 }
-
