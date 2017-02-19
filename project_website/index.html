@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--meta tag for auto-refreshing the page every 5 seconds for updates-->
   <!--Link to style sheet-->
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
   <!--Link to Javascript and jQuery files-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/bpHS.js"></script>
+  <script src="js/bpHS.min.js"></script>
+  <script src="js/custom.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -42,11 +47,42 @@
 </nav>
 
 <section id="home">
+  <img id="large-logo"src="assets/large_logo.png" width="200px">
+  <div id="slider" class="container">
+      <div class="bp-hs has-touchSwipe" id="demo-default">
+        <div class="bp-hs_inner" style="width: 468px;">
+          <div class="bp-hs_inner__item is-active" data-transform="scale">
+            <img src="bpHS/dist/images/demo/01.jpg" alt="Boompx Hero Slider 01"/>
+          </div>
+          <div class="bp-hs_inner__item" data-transform="rotate" data-origin="top-left">
+            <img src="bpHS/dist/images/demo/02.jpg" alt="Boompx Hero Slider 02"/>
+          </div>
+          <div class="bp-hs_inner__item" data-transform="rotate"  data-origin="bottom-left">
+            <img src="bpHS/dist/images/demo/03.jpg" alt="Boompx Hero Slider 03"/>
+          </div>
+          <div class="bp-hs_inner__item">
+            <img src="bpHS/dist/images/demo/04.jpg" alt="Boompx Hero Slider 04"/>
+          </div>
+          <div class="bp-hs_control">
+            <div class="bp-bullets">
+              <i class="bp-bullets_bullets current"></i>
+              <i class="bp-bullets_bullets"></i>
+              <i class="bp-bullets_bullets"></i>
+              <i class="bp-bullets_bullets"></i>
+            </div>
+            <button type="button" class="bp-btn bp-hs_control__prev">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <button type="button" class="bp-btn bp-hs_control__next">
+              <i class="fa fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 <div class="row">
 <div class="col-lg-12">
-  <div class="container">
-    <div id="home-jumbo" class="jumbotron">
-      <img id="large-logo"src="assets/large_logo.png" width="250px">
+  <div id="social-btns" class="container">
           <h3>By Stephanie Honore`</h3>
           <ul class="list-inline intro-social-buttons">
             <!--links to social media-->
@@ -57,6 +93,7 @@
       </div>
     </div>
   </div>
+
 </section>
 <!--about section-->
 <section id="about">
@@ -100,7 +137,7 @@
         <div class="clearfix"></div>
         <h2 class="section-heading">Research</h2>
         <p class="lead">I am committed to
-putting in the time and energy to research the right, not the most convienient, solutions to meet your technical needs. I am not afraid to admit that I do not know the answer right off the bat, however I am an experts at unleashing a brainstorm of answers to the most complex of problems.</p>
+putting in the time and energy to research the right, not the most convienient, solutions to meet your technical needs. I am an experts at unleashing a brainstorm of answers to the most complex of problems.</p>
       </div>
       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
         <img class="img-responsive" src="assets/research2.svg" alt="research-img">
