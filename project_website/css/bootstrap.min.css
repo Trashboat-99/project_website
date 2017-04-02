@@ -18,7 +18,7 @@ body, html{
 	background-color: #FFFFFF
 }
 #home{
-	background-image:url("../assets/purple_vetcor.jpg");
+	/*background-image:url("../assets/purple_vetcor.jpg");*/
 	text-align: center;
 	height:125%;
 	width:100%;
@@ -29,11 +29,13 @@ body, html{
 }
 #large-logo{
 	position:relative;
-	top: 75px;
+	top: 100px;
+	right: 23px;
 }
 #social-btns{
 	position: relative;
-	top: 100px;
+	top: 350px;
+	color:#FFFFFF;
 }
 #design-img{
 	-webkit-transition: -webkit-transform .8s ease-in-out;
@@ -79,3 +81,112 @@ footer{
 	font-size: 24px;
 	margin-left: 30%;
 }
+#carousel, #carousel > div {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #455A64;
+    overflow: hidden;
+
+}
+
+    #carousel > div {
+        position: absolute;
+    }
+
+    #carousel > i {
+        color: #FFFFFF;
+        position: absolute;
+        font-size: 60px;
+        margin: 20px;
+        top: 40%;
+        text-shadow: 0 10px 2px #223422;
+        cursor: pointer;
+        -moz-transition: .2s;
+        -o-transition: .2s;
+        -webkit-transition: .2s;
+        transition: .2s;
+    }
+
+    #carousel > #left {
+        left: -100px;
+    }
+
+    #carousel > #right {
+        right: -100px;
+    }
+
+
+    #carousel:hover > #left {
+        left:0;
+    }
+
+    #carousel:hover > #right {
+        right: 0;
+    }
+
+    #carousel > i:active {
+        color: #ac4d4d;
+        text-shadow: 0 5px 2px #000000;
+        -moz-transform: translate(0,5px);
+        -ms-transform: translate(0,5px);
+        -o-transform: translate(0,5px);
+        -webkit-transform: translate(0,5px);
+        transform: translate(0,5px);
+        cursor: pointer;
+    }
+
+    #carousel > ul {
+        position: absolute;
+        bottom: 10px;
+        /*change left property to adjust the position of the buttons*/
+        left: 46%;
+        z-index: 4;
+        padding: 0;
+        margin: 0;
+    }
+
+        #carousel > ul > li {
+            margin: 0;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            list-style: none;
+            float: left;
+            background-color: white;
+            margin-right: 20px;
+            cursor: pointer;
+            border: 5px solid #223422;
+            box-shadow: 0 0 5px 1px white;
+            -moz-transition: .3s;
+            -o-transition: .3s;
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
+
+            #carousel > ul > li.showli {
+                background-color: #ac4d4d;
+                border: 5px solid white;
+                box-shadow: 0 0 5px 1px #ac4d4d;
+                -moz-animation: boing .5s forwards;
+                -o-animation: boing .5s forwards;
+                -webkit-animation: boing .5s forwards;
+                animation: boing .5s forwards;
+            }
+
+            #carousel > ul > li:hover {
+                background-color: #4800ff;
+                border: 5px solid white;
+                box-shadow: 0 0 5px 1px #ac4d4d;
+            }
+
+    #carousel > div.show {
+        z-index: 1;
+    }
+
+@keyframes boing{0%{transform:scale(1.2)}40%{transform:scale(.6)}60%{transform:scale(1.2)}80%{transform:scale(.8)}100%{transform:scale(1)}}
