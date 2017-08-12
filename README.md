@@ -1,2 +1,2 @@
 # Provality Website
-This is a website I'm building for a class project. 
+This is a simple portfolio website that will link to demos of my work. This is written in html/css/vanilla js 
